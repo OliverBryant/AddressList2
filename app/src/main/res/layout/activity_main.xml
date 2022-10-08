@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_userlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gv_button_menu"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/design_default_color_background"
+        >
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/add"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+        </ImageButton>
+
+
+
+        <ImageButton
+            android:id="@+id/ib_menu1"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/menu"
+            android:scaleType="centerCrop"
+            android:gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/ib_exit"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/exit"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+        </ImageButton>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/menu"
+        android:scaleType="centerCrop"
+        android:gravity="bottom"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="544sp">
+    </ImageButton>
+    <RelativeLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/design_default_color_background"
+        android:layout_above="@id/gv_button_menu">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the name"
+            android:textSize="30sp">
+
+        </EditText>
+        <ImageButton
+            android:id="@+id/ib_find"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/find"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="343dp">
+        </ImageButton>
+    </RelativeLayout>
+</RelativeLayout>

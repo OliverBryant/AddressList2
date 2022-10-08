@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Address List</string>
+    <string name="url">http://linux.gleaming.cn:18080/</string>
+    <string name="url1">http://10.0.2.2/</string>
+</resources>
